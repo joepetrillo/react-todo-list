@@ -1,0 +1,13 @@
+# Dependencies
+node_modules
+
+# Environment Variables
+.env
+
+# Parcel
+dist
+.parcel-cache
+
+# Other
+.DS_Store
+.vscode
