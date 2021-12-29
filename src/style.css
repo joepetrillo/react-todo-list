@@ -48,3 +48,14 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

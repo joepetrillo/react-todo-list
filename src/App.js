@@ -1,15 +1,32 @@
+import { StrictMode, useState } from "react";
 import ReactDOM from "react-dom";
-import Pet from "./Pet";
+import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
 
 const App = () => {
+  const [todoItems, setTodoItems] = useState([]);
+
+  const deleteTodo = (id) => {
+    setTodoItems(todoItems.filter((todo) => todo.id !== id));
+  };
+
+  const addTodo = (userInput) => {
+    if (userInput === "") return;
+    setTodoItems([{ id: todoItems.length + 1, task: userInput }, ...todoItems]);
+  };
+
   return (
     <div>
-      <h1>My Pets</h1>
-      <Pet name="Carly" animal="Dog" breed="Black Lab" />
-      <Pet name="Lucas" animal="Cat" breed="House Cat" />
-      <Pet name="Gibby" animal="Fish" breed="Goldfish" />
+      <h1>The Greatest To-Do List Ever</h1>
+      <TodoForm addTodo={addTodo} />
+      <TodoList todoItems={todoItems} deleteTodo={deleteTodo} />
     </div>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+  document.getElementById("root")
+);

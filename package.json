@@ -2,12 +2,12 @@
   "name": "react-from-scratch",
   "version": "1.0.0",
   "description": "A simple React toolchain",
-  "main": "index.js",
   "browserslist": "defaults",
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "author": "Joe Petrillo",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "parcel": "^2.0.1",
     "prettier": "^2.5.1"
   },
