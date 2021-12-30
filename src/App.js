@@ -12,7 +12,7 @@ const App = () => {
 
   const addTodo = (userInput) => {
     if (userInput === "") return;
-    setTodoItems([{ id: todoItems.length + 1, task: userInput }, ...todoItems]);
+    setTodoItems([{ id: Date.now(), task: userInput }, ...todoItems]);
   };
 
   return (
