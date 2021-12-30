@@ -1,6 +1,6 @@
 const Todo = ({ todo, deleteTodo }) => {
   return (
-    <div className="todo">
+    <div>
       <h3>{todo.task}</h3>
       <button onClick={() => deleteTodo(todo.id)}>DELETE</button>
     </div>
