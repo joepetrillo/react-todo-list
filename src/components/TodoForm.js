@@ -21,7 +21,7 @@ const TodoForm = ({ addTodo }) => {
           type="text"
           onChange={handleChange}
           placeholder="Enter task..."
-          className="basis-9/12 p-2 rounded-l-md text-gray-900"
+          className="basis-9/12 p-2 rounded-l-md rounded-r-none text-gray-900"
         />
         <button className="basis-3/12 bg-sky-500 hover:bg-sky-600 rounded-r-md">
           Add Task
