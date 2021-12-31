@@ -1,8 +1,12 @@
+import { TiDeleteOutline } from "react-icons/ti";
+
 const Todo = ({ todo, deleteTodo }) => {
   return (
-    <div>
-      <h3>{todo.task}</h3>
-      <button onClick={() => deleteTodo(todo.id)}>DELETE</button>
+    <div className="flex justify-between items-center mb-6">
+      <h3 className="text-lg">{todo.task}</h3>
+      <button onClick={() => deleteTodo(todo.id)} className="pl-6">
+        <TiDeleteOutline size="2rem" />
+      </button>
     </div>
   );
 };

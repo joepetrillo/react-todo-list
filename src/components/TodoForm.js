@@ -14,15 +14,18 @@ const TodoForm = ({ addTodo }) => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="text-lg">
+      <form onSubmit={handleSubmit} className="flex mb-8">
         <input
           value={userInput}
           type="text"
           onChange={handleChange}
           placeholder="Enter task..."
+          className="basis-9/12 p-2 rounded-l-md text-gray-900"
         />
-        <button>Add Task</button>
+        <button className="basis-3/12 bg-sky-500 hover:bg-sky-600 rounded-r-md">
+          Add Task
+        </button>
       </form>
     </div>
   );

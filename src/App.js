@@ -16,8 +16,10 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h1>The Greatest To-Do List Ever</h1>
+    <div className="max-w-screen-sm mx-auto px-4 text-gray-100 my-8">
+      <h1 className="text-center mb-8 text-3xl sm:text-4xl underline">
+        The Greatest To-Do List
+      </h1>
       <TodoForm addTodo={addTodo} />
       <TodoList todoItems={todoItems} deleteTodo={deleteTodo} />
     </div>
