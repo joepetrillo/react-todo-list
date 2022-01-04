@@ -2,13 +2,15 @@
   "name": "react-todo-list-backend",
   "version": "1.0.0",
   "description": "A simple backend for react-todo-list-frontend",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "dev": "nodemon src/server.js"
   },
   "author": "Joe Petrillo",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^2.0.15",
     "prettier": "^2.5.1"
   }
 }
