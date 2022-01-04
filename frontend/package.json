@@ -1,5 +1,5 @@
 {
-  "name": "react-todo-list",
+  "name": "react-todo-list-frontend",
   "version": "1.0.0",
   "description": "A simple todo list app made with react",
   "browserslist": "defaults",

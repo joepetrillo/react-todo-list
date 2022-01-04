@@ -1,0 +1,14 @@
+{
+  "name": "react-todo-list-backend",
+  "version": "1.0.0",
+  "description": "A simple backend for react-todo-list-frontend",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "author": "Joe Petrillo",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}
